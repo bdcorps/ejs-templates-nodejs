@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <img id="image1" alt="" />
+    <h1 id="name1"></h1>
+    <p id="email1"></p>
+
+    <script type="text/javascript">
+      var data = <%- data %>;
+      console.log(data);
+        
+      var image1 = document.getElementById("image1");
+      var name1 = document.getElementById("name1");
+      var email1 = document.getElementById("email1");      
+
+      image1.src = data.image;
+      name1.textContent = data.name;
+      email1.textContent = data.email;
+    </script>
+  </body>
+</html>
